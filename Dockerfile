@@ -3,7 +3,7 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm install
 
-FROM node:20-alpine AS development
+FROM base AS development
 COPY . .
 EXPOSE 3000
 CMD ["npm", "run", "dev"]
@@ -12,7 +12,7 @@ FROM base AS builder
 COPY . .
 RUN npm run build
 
-FROM node:20-apline AS production
+FROM node:20-alpine AS production
 
 WORKDIR /app
 
