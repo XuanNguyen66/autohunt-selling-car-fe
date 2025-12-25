@@ -9,7 +9,7 @@ on:
 
     paths:
       - "**"
-      - ".github/workflows/fe_carselling.yml"
+      - ".github/workflows/fe_carselling_prod.yml"
 
 jobs:
   buil-deploy:
