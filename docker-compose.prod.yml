@@ -10,8 +10,6 @@ services:
       - CHOKIDAR_USEPOLLING=true
       - WATCHPACK_POLLING=true
       - NEXT_WEBPACK_ENABLED=1
-      - NEXT_PUBLIC_API_URL=${NEXT_PUBLIC_API_URL_PROD}
-      - API_URL_INTERNAL=${API_URL_INTERNAL_PROD}
     stdin_open: true
     tty: true
     networks:
