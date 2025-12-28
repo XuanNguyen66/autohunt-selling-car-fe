@@ -9,8 +9,8 @@ export default function TestPage() {
   const handleCreateUser = async () => {
     setLoading(true);
     try {
-      const result = await apiClient('/users-test/list', {
-        method: 'GET',
+      const result = await apiClient('/users-test/create', {
+        method: 'POST',
       });
 
       setData(result);
