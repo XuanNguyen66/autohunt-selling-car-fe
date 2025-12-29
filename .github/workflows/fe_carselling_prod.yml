@@ -9,7 +9,6 @@ on:
 
     paths:
       - "**"
-      - ".github/workflows/fe_carsellung_prod.yml"
 jobs:
   buil-deploy:
     name: Build And Production FrontEnd
