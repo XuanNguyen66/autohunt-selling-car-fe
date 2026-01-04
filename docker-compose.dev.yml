@@ -18,9 +18,9 @@ services:
     
     stdin_open: true
     tty: true
-    networks:
-      - network_connect
+    # networks:
+    #   - network_connect
 
-networks:
-  network_connect:
-    external: true
+# networks:
+#   network_connect:
+#     external: true
